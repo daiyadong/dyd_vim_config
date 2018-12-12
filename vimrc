@@ -258,7 +258,7 @@ let g:ycm_complete_in_comments = 1                          " 在注释输入中
 let g:ycm_complete_in_strings = 1                           " 在字符串输入中也能补全
 let g:ycm_collect_identifiers_from_comments_and_strings = 1 " 注释和字符串中的文字也会被收入补全
 let g:ycm_collect_identifiers_from_tags_files = 1
-let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+"let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 let g:ycm_show_diagnostics_ui = 0                           " 禁用语法检查
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>" |            " 回车即选中当前项
 "nnoremap <c-j> :YcmCompleter GoToDefinitionElseDeclaration<CR>|     " 跳转到定义处
@@ -477,6 +477,7 @@ nnoremap <leader>gd :YcmCompleter GoToDeclaration<CR>
     let g:airline_right_alt_sep = '❮'
     let g:airline_symbols.linenr = '¶'
     let g:airline_symbols.branch = '⎇'
+    let g:airline_powerline_fonts = 1
     " 是否打开tabline
     " let g:airline#extensions#tabline#enabled = 1
 " }}}
@@ -722,9 +723,9 @@ set t_ti= t_te=
 
 
 " 鼠标暂不启用, 键盘党....
-"set mouse-=a
+set mouse-=a
 " 启用鼠标
- set mouse=a
+"" set mouse=a
 " Hide the mouse cursor while typing
 " set mousehide
 
