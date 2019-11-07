@@ -17,7 +17,7 @@ Plug 'VundleVim/Vundle.vim'
 "  isnowfy only compatible with python not python3
 "Plugin 'jtratner/vim-flavored-markdown'
 Plug 'suan/vim-instant-markdown'
-Plug 'nelstrom/vim-markdown-preview'
+"Plug 'nelstrom/vim-markdown-preview'
 "python sytax checker
 Plug 'nvie/vim-flake8'
 Plug 'vim-scripts/indentpython.vim'
@@ -158,6 +158,9 @@ Plug 'hynek/vim-python-pep8-indent'
 Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'https://github.com/vim-scripts/DoxygenToolkit.vim.git'
 Plug 'elzr/vim-json', {'for': 'json'}
+Plug 'godlygeek/tabular'
+"Plug 'plasticboy/vim-markdown'
+
 "call vundle#end()
 call plug#end()
 
@@ -671,7 +674,6 @@ let g:DoxygenToolkit_blockHeader="----------------------------------------------
 let g:DoxygenToolkit_blockFooter="----------------------------------------------------------------------------"
 let g:DoxygenToolkit_authorName="mtnk2010@gmail.com"
 let g:DoxygenToolkit_licenseTag="GPL"
-
 "-----------------------------------------------------------
 "-----------------------------------------------------------
 "-----------------------------------------------------------
@@ -725,7 +727,7 @@ set t_ti= t_te=
 " 鼠标暂不启用, 键盘党....
 set mouse-=a
 " 启用鼠标
-"" set mouse=a
+"set mouse=a
 " Hide the mouse cursor while typing
 " set mousehide
 
@@ -1221,7 +1223,7 @@ if has("autocmd")
   " Highlight TODO, FIXME, NOTE, etc.
   if v:version > 701
     autocmd Syntax * call matchadd('Todo',  '\W\zs\(TODO\|FIXME\|CHANGED\|DONE\|XXX\|BUG\|HACK\)')
-    autocmd Syntax * call matchadd('Debug', '\W\zs\(NOTE\|INFO\|IDEA\|NOTICE\)')
+    autocmd Syntax * call matchadd('Debug', '\W\zs\(NOTE\|INFO\|IDEA\|NOTICE\|DEBUG\|ERR\)')
   endif
 endif
 
