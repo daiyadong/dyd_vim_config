@@ -669,11 +669,25 @@ nnoremap <leader>gd :YcmCompleter GoToDeclaration<CR>
 
 let g:DoxygenToolkit_briefTag_pre="@Synopsis  "
 let g:DoxygenToolkit_paramTag_pre="@Param "
-let g:DoxygenToolkit_returnTag="@Returns   "
+let g:DoxygenToolkit_returnTag="@Returns\t"
+
 let g:DoxygenToolkit_blockHeader="--------------------------------------------------------------------------"
 let g:DoxygenToolkit_blockFooter="----------------------------------------------------------------------------"
-let g:DoxygenToolkit_authorName="mtnk2010@gmail.com"
-let g:DoxygenToolkit_licenseTag="GPL"
+ 
+let g:DoxygenToolkit_fileTag="@filename  "
+let g:DoxygenToolkit_dateTag="@modify    "
+let g:DoxygenToolkit_authorTag="@author    "
+let g:DoxygenToolkit_versionTag="@version   "
+let g:DoxygenToolkit_versionString="0.1.0"
+let g:DoxygenToolkit_authorName="daiyadong <mtnk2010@gmail.com>"
+
+let s:licenseTag="Copyright(C) "
+let s:licenseTag = s:licenseTag . "For free "
+let s:licenseTag = s:licenseTag . "All right reserved"
+let g:DoxygenToolkit_licenseTag = s:licenseTag
+let g:DoxygenToolkit_briefTag_funcName="yes"
+let g:doxygen_enhanced_color=1
+
 "-----------------------------------------------------------
 "-----------------------------------------------------------
 "-----------------------------------------------------------
