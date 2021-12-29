@@ -16,7 +16,7 @@ Plug 'VundleVim/Vundle.vim'
 "html
 "  isnowfy only compatible with python not python3
 "Plugin 'jtratner/vim-flavored-markdown'
-Plug 'suan/vim-instant-markdown'
+" Plug 'suan/vim-instant-markdown'
 "Plug 'nelstrom/vim-markdown-preview'
 "python sytax checker
 Plug 'nvie/vim-flake8'
@@ -739,9 +739,9 @@ set t_ti= t_te=
 
 
 " 鼠标暂不启用, 键盘党....
-set mouse-=a
+"set mouse-=a
 " 启用鼠标
-"set mouse=a
+set mouse=a
 " Hide the mouse cursor while typing
 " set mousehide
 
